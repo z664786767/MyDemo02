@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/continal"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:id="@+id/pager_main" />
+
+    <RadioGroup
+        android:id="@+id/group_main"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+        <RadioButton
+            style="@style/radiostyle"
+            android:id="@+id/radio1"
+            android:text="首页"
+            android:checked="true"
+            android:drawableTop="@drawable/select_radio1"
+
+            />
+
+        <RadioButton
+            style="@style/radiostyle"
+            android:text="搜索"
+            android:drawableTop="@drawable/select_radio"
+            android:id="@+id/radio2"
+           />
+
+        <RadioButton
+            style="@style/radiostyle"
+            android:text="厨房宝典"
+            android:drawableTop="@drawable/select_radio2"
+            android:id="@+id/radio3"
+            />
+
+        <RadioButton
+            style="@style/radiostyle"
+            android:text="营养餐桌"
+            android:drawableTop="@drawable/select_radio3"
+            android:id="@+id/radio4"
+            />
+        <RadioButton
+            style="@style/radiostyle"
+            android:drawableTop="@drawable/select_radio4"
+
+            android:text="更多"
+            android:id="@+id/radio5"
+            />
+    </RadioGroup>
+
+</LinearLayout>
